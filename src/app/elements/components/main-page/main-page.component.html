@@ -1,2 +1,22 @@
-<p>main-page works!</p>
-<router-outlet></router-outlet>
+<button
+  tuiIconButton
+  type="button"
+  (click)="toggleMenu(true)"
+  (tuiActiveZoneChange)="toggleMenu($event)"
+  class="toggle_btn"
+  icon="tuiIconAlignJustifyLarge"
+  appearance="icon"
+>
+  <app-side-menu *tuiSidebar="menuOpen; direction: 'left'"></app-side-menu>
+</button>
+<div class="tui-row tui-row_adaptive landing-layout-wrapper">
+  <div class="main-navigation tui-col_xs-12 tui-col_md-3 tui-col_lg-3">
+    <app-side-menu></app-side-menu>
+  </div>
+
+  <div
+    class="tui-col_xs-12 tui-col_md-9 tui-col_lg-9 tui-container tui-container_adaptive landing-layout"
+  >
+    <router-outlet></router-outlet>
+  </div>
+</div>
