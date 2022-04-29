@@ -1,0 +1,27 @@
+.side-menu {
+  display: flex;
+  max-height: 100%;
+  text-align: left;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: calc(25% - 1px);
+  border-right: 1px solid #ededed;
+  background-color: #fafafa;
+}
+
+::ng-deep .side-menu .content .wrapper {
+  background-color: unset !important;
+}
+
+::ng-deep .side-menu .wrapper .content {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+@media screen and (max-width: 47.9375em) {
+  .side-menu {
+    padding-top: 0;
+    width: 80%;
+    border-right: unset;
+  }
+}

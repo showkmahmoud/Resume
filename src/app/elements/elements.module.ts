@@ -8,6 +8,11 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ContactComponent } from './components/contact/contact.component';
 
+import { TuiActiveZoneModule } from '@taiga-ui/cdk';
+import { CoreModule } from '../core/core.module';
+import { TuiSidebarModule } from '@taiga-ui/addon-mobile';
+import { TuiScrollbarModule } from '@taiga-ui/core';
+import { TuiAccordionModule } from '@taiga-ui/kit';
 
 @NgModule({
   declarations: [
@@ -15,11 +20,16 @@ import { ContactComponent } from './components/contact/contact.component';
     HomeComponent,
     ResumeComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     CommonModule,
-    ElementsRoutingModule
-  ]
+    ElementsRoutingModule,
+    TuiActiveZoneModule,
+    CoreModule,
+    TuiSidebarModule,
+    TuiAccordionModule,
+    TuiScrollbarModule,
+  ],
 })
-export class ElementsModule { }
+export class ElementsModule {}
