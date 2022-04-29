@@ -11,7 +11,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { TuiActiveZoneModule } from '@taiga-ui/cdk';
 import { CoreModule } from '../core/core.module';
 import { TuiSidebarModule } from '@taiga-ui/addon-mobile';
-import { TuiScrollbarModule } from '@taiga-ui/core';
+import { TuiButtonModule, TuiScrollbarModule } from '@taiga-ui/core';
 import { TuiAccordionModule } from '@taiga-ui/kit';
 
 @NgModule({
@@ -30,6 +30,7 @@ import { TuiAccordionModule } from '@taiga-ui/kit';
     TuiSidebarModule,
     TuiAccordionModule,
     TuiScrollbarModule,
+    TuiButtonModule,
   ],
 })
 export class ElementsModule {}
