@@ -1,1 +1,16 @@
-<nav class="side-menu"></nav>
+<nav class="side-menu">
+  <tui-scrollbar class="scrollbar">
+    <div class="name-info">
+      <p>{{ user.name }}</p>
+      <p>{{ user.position }}</p>
+    </div>
+    <div class="img-wrapper">
+      <img [src]="img" alt="" />
+    </div>
+    <div class="info-wrapper" *ngFor="let key of Object.keys(user)">
+      <p>
+        <span>{{ key }} : </span><span> {{ user[key] }}</span>
+      </p>
+    </div></tui-scrollbar
+  >
+</nav>

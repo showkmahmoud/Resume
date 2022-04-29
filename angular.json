@@ -36,10 +36,12 @@
               }
             ],
             "styles": [
+              "src/styles.less",
               "src/custom-theme.scss",
               "node_modules/@taiga-ui/core/styles/taiga-ui-global.less",
               "node_modules/@taiga-ui/core/styles/taiga-ui-theme.less",
-              "src/styles.less"
+              "src/cv-theme.less",
+              "src/cv-style.less"
             ],
             "scripts": []
           },
@@ -102,13 +104,8 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "less",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.less"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.less"],
             "scripts": []
           }
         }
