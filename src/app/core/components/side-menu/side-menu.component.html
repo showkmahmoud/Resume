@@ -1,16 +1,66 @@
 <nav class="side-menu">
   <tui-scrollbar class="scrollbar">
     <div class="name-info">
-      <p>{{ user.name }}</p>
-      <p>{{ user.position }}</p>
+      <p class="tui-text_h5 name-info-user">{{ user.name }}</p>
+      <p class="tui-text_body-m-bold name-info-positon">{{ user.position }}</p>
     </div>
     <div class="img-wrapper">
-      <img [src]="img" alt="" />
+      <img [src]="user.img" />
     </div>
-    <div class="info-wrapper" *ngFor="let key of Object.keys(user)">
-      <p>
-        <span>{{ key }} : </span><span> {{ user[key] }}</span>
-      </p>
-    </div></tui-scrollbar
-  >
+
+    <ul class="info-wrapper">
+      <span class="icon">
+        <img class="img-fluid" src="../../../../assets/icon.png" />
+      </span>
+      <li>
+        <p class="tui-text_body-m-bold">
+          <strong class="info">Name : </strong> {{ user.name }}
+        </p>
+      </li>
+      <li>
+        <p class="tui-text_body-m-bold">
+          <strong class="info">Birthday : </strong> {{ user.birthday }}
+        </p>
+      </li>
+      <li>
+        <p class="tui-text_body-m-bold">
+          <strong class="info">Position : </strong> {{ user.position }}
+        </p>
+      </li>
+      <li>
+        <p class="tui-text_body-m-bold">
+          <strong class="info">Email : </strong> {{ user.email }}
+        </p>
+      </li>
+      <li>
+        <p class="tui-text_body-m-bold">
+          <strong class="info">Miltary Service : </strong>
+          {{ user.military_service }}
+        </p>
+      </li>
+    </ul>
+    <div class="tui-row tui-row_adaptive social-icon-wrapper">
+      <a
+        class="social-icon"
+        *ngFor="let icon of user.socialMedia"
+        tuiLink
+        [attr.href]="icon?.link"
+      >
+        <i-bs
+          [name]="icon.iconName"
+          [width]="icon.iconSize"
+          [height]="icon.iconSize"
+        >
+        </i-bs>
+      </a>
+    </div>
+    <button
+      tuiButton
+      class="btn"
+      iconRight="tuiIconDownloadLarge"
+      (click)="onDownload()"
+    >
+      Download CV
+    </button>
+  </tui-scrollbar>
 </nav>

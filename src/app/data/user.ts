@@ -1,9 +1,33 @@
-export const userImg =
-  'https://wbkijcvomvqhdrlrkszt.supabase.co/storage/v1/object/public/resume/WhatsApp Image 2022-04-29 at 12.44.27 AM.jpeg';
 export const user = {
+  img: '../assets/user1.jpeg ',
   name: 'Alaa Muhammed',
-  birthday: '4 November 1992',
+  birthday: '4th of November 1992',
   position: 'Events Account Manger',
-  email: '',
+  email: 'alaamuhammed92@gmail.com',
   military_service: '',
+  about:
+    'Very passionate about my career aiming to achieve the best professional career through dedication, hard work, and continuous development',
+  resume: '../assets/user1.jpeg',
+  socialMedia: [
+    {
+      iconName: 'facebook',
+      link: 'https://www.facebook.com/PeparsMohamed',
+      iconSize: 25,
+    },
+    {
+      iconName: 'twitter',
+      link: '',
+      iconSize: 25,
+    },
+    {
+      iconName: 'linkedin',
+      link: 'http://linkedin.com/in/alaa-muhammed-793065178',
+      iconSize: 25,
+    },
+    {
+      iconName: 'instagram',
+      link: 'https://instagram.com/alaamuhammed92?igshid=YmMyMTA2M2Y=',
+      iconSize: 25,
+    },
+  ],
 };

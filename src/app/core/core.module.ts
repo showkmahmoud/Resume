@@ -15,7 +15,7 @@ import {
   TuiSvgModule,
 } from '@taiga-ui/core';
 import { RouterModule } from '@angular/router';
-
+import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 @NgModule({
   declarations: [SideMenuComponent, NavbarComponent],
   imports: [
@@ -26,7 +26,7 @@ import { RouterModule } from '@angular/router';
     TuiButtonModule,
     TuiExpandModule,
     TuiSvgModule,
-
+    NgxBootstrapIconsModule.pick(allIcons),
     RouterModule,
     TuiScrollbarModule,
     TuiScrollIntoViewModule,
