@@ -34,6 +34,7 @@
     "@taiga-ui/kit": "^2.43.0",
     "@tinkoff/ng-dompurify": "3.0.0",
     "dompurify": "2.2.9",
+    "font-awesome": "^4.7.0",
     "ngx-bootstrap-icons": "^1.8.2",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",

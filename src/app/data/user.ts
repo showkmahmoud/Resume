@@ -1,5 +1,5 @@
 export const user = {
-  img: '../assets/user1.jpeg ',
+  img: '../assets/user.jpeg',
   name: 'Alaa Muhammed',
   birthday: '4th of November 1992',
   position: 'Events Account Manger',
@@ -12,22 +12,37 @@ export const user = {
     {
       iconName: 'facebook',
       link: 'https://www.facebook.com/PeparsMohamed',
-      iconSize: 25,
+      iconSize: 20,
     },
     {
       iconName: 'twitter',
       link: '',
-      iconSize: 25,
+      iconSize: 20,
     },
     {
       iconName: 'linkedin',
       link: 'http://linkedin.com/in/alaa-muhammed-793065178',
-      iconSize: 25,
+      iconSize: 20,
     },
     {
       iconName: 'instagram',
       link: 'https://instagram.com/alaamuhammed92?igshid=YmMyMTA2M2Y=',
-      iconSize: 25,
+      iconSize: 20,
     },
   ],
 };
+export const navbarItems = [
+  { link: 'education', name: 'Education History' },
+  {
+    link: 'resume',
+    name: 'Working History',
+  },
+  {
+    link: 'portfolio',
+    name: 'Portfolio',
+  },
+  {
+    link: 'contact',
+    name: 'Contact',
+  },
+];

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { user } from 'src/app/data/user';
 
 @Component({
@@ -8,7 +8,7 @@ import { user } from 'src/app/data/user';
 })
 export class SideMenuComponent implements OnInit {
   user: any = user;
-  Object = Object;
+  @Output() buttonClicked: EventEmitter<boolean> = new EventEmitter();
 
   constructor() {}
 
@@ -24,5 +24,8 @@ export class SideMenuComponent implements OnInit {
     document.body.appendChild(link);
     link.click();
     link.remove();
+  }
+  onClose() {
+    this.buttonClicked.emit(true);
   }
 }

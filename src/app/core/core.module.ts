@@ -16,8 +16,11 @@ import {
 } from '@taiga-ui/core';
 import { RouterModule } from '@angular/router';
 import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
+import { RightSideMenuComponent } from './components/right-side-menu/right-side-menu.component';
+import { TuiLinkModule } from '@taiga-ui/core';
+
 @NgModule({
-  declarations: [SideMenuComponent, NavbarComponent],
+  declarations: [SideMenuComponent, NavbarComponent, RightSideMenuComponent],
   imports: [
     CommonModule,
     CoreRoutingModule,
@@ -30,7 +33,8 @@ import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
     RouterModule,
     TuiScrollbarModule,
     TuiScrollIntoViewModule,
+    TuiLinkModule,
   ],
-  exports: [SideMenuComponent, NavbarComponent],
+  exports: [SideMenuComponent, NavbarComponent, RightSideMenuComponent],
 })
 export class CoreModule {}

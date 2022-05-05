@@ -13,6 +13,8 @@ import { CoreModule } from '../core/core.module';
 import { TuiSidebarModule } from '@taiga-ui/addon-mobile';
 import { TuiButtonModule, TuiScrollbarModule } from '@taiga-ui/core';
 import { TuiAccordionModule } from '@taiga-ui/kit';
+import { allIcons, NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
+import { EducationComponent } from './components/education/education.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,7 @@ import { TuiAccordionModule } from '@taiga-ui/kit';
     ResumeComponent,
     PortfolioComponent,
     ContactComponent,
+    EducationComponent,
   ],
   imports: [
     CommonModule,
@@ -31,6 +34,7 @@ import { TuiAccordionModule } from '@taiga-ui/kit';
     TuiAccordionModule,
     TuiScrollbarModule,
     TuiButtonModule,
+    NgxBootstrapIconsModule.pick(allIcons),
   ],
 })
 export class ElementsModule {}

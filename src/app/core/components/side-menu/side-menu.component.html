@@ -1,9 +1,22 @@
 <nav class="side-menu">
   <tui-scrollbar class="scrollbar">
-    <div class="name-info">
-      <p class="tui-text_h5 name-info-user">{{ user.name }}</p>
-      <p class="tui-text_body-m-bold name-info-positon">{{ user.position }}</p>
+    <div class="header-wrapper">
+      <div class="name-info">
+        <p class="tui-text_h5 name-info-user">{{ user.name }}</p>
+        <p class="tui-text_body-m-bold name-info-positon">
+          {{ user.position }}
+        </p>
+      </div>
+      <button
+        tuiButton
+        appearance="icon"
+        (click)="onClose()"
+        size="m"
+        icon="tuiIconCloseLarge"
+        class="close-btn"
+      ></button>
     </div>
+
     <div class="img-wrapper">
       <img [src]="user.img" />
     </div>
@@ -39,21 +52,7 @@
         </p>
       </li>
     </ul>
-    <div class="tui-row tui-row_adaptive social-icon-wrapper">
-      <a
-        class="social-icon"
-        *ngFor="let icon of user.socialMedia"
-        tuiLink
-        [attr.href]="icon?.link"
-      >
-        <i-bs
-          [name]="icon.iconName"
-          [width]="icon.iconSize"
-          [height]="icon.iconSize"
-        >
-        </i-bs>
-      </a>
-    </div>
+
     <button
       tuiButton
       class="btn"

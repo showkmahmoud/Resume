@@ -7,11 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
   menuOpen: boolean = false;
-
+  rightMenuOpen: boolean = false;
   constructor() {}
 
   ngOnInit(): void {}
   toggleMenu(menuOpen: boolean) {
     this.menuOpen = menuOpen;
+  }
+  toggleRightMenu(rightMenuOpen: boolean) {
+    this.rightMenuOpen = rightMenuOpen;
+  }
+  onClose() {
+    this.menuOpen = false;
+  }
+  onCloseRightMenu() {
+    this.rightMenuOpen = false;
   }
 }

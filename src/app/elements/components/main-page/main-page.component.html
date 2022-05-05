@@ -1,24 +1,41 @@
-<button
-  tuiIconButton
-  type="button"
-  (click)="toggleMenu(true)"
-  (tuiActiveZoneChange)="toggleMenu($event)"
-  class="toggle_btn"
-  icon="tuiIconAlignJustifyLarge"
-  appearance="icon"
->
-  <app-side-menu *tuiSidebar="menuOpen; direction: 'left'"></app-side-menu>
-</button>
+<nav class="mobile-nav">
+  <button
+    tuiIconButton
+    type="button"
+    icon="tuiIconAlignJustifyLarge"
+    appearance="icon"
+    size="m"
+    (click)="toggleMenu(true)"
+    (tuiActiveZoneChange)="toggleMenu($event)"
+  >
+    <app-side-menu
+      (buttonClicked)="onClose()"
+      *tuiSidebar="menuOpen; direction: 'left'"
+    ></app-side-menu>
+  </button>
+  <i
+    class="fa fa-home fa-3x home-icon"
+    (click)="toggleRightMenu(true)"
+    (tuiActiveZoneChange)="toggleRightMenu($event)"
+  >
+    <app-right-side-menu
+      (buttonClicked)="onCloseRightMenu()"
+      *tuiSidebar="rightMenuOpen; direction: 'right'"
+    ></app-right-side-menu>
+  </i>
+</nav>
 
 <div class="tui-row tui-row_adaptive landing-layout-wrapper">
   <div class="tui-col_xs-12 tui-col_md-3 tui-col_lg-3 main-navigation">
     <app-side-menu></app-side-menu>
   </div>
 
-  <div
-    class="tui-col_xs-12 tui-col_md-9 tui-col_lg-9 tui-container tui-container_adaptive landing-layout"
-  >
-    <nav>\svarvrej hhsv uwh vwuih ih</nav>
-    <router-outlet></router-outlet>
+  <div class="tui-col_xs-12 tui-col_md-9 tui-col_lg-9 landing-layout">
+    <div class="navbar">
+      <app-navbar></app-navbar>
+    </div>
+    <div class="elements">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>
