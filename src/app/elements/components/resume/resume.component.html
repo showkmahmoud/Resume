@@ -1,1 +1,15 @@
-<p>resume works!</p>
+<div class="resume">
+  <p class="tui-text_h5 header">{{ user.work.name }}</p>
+  <div class="divider"></div>
+  <ul class="list">
+    <li
+      class="p-content tui-text_body-m"
+      *ngFor="let item of user.work.content"
+    >
+      <p class="tui-text_body-m-bold">{{ item.position }}</p>
+      <p>{{ item.time }}</p>
+      <p>{{ item.location }}</p>
+      <p>{{ item.content }}</p>
+    </li>
+  </ul>
+</div>

@@ -3,7 +3,7 @@
     <div class="header-wrapper">
       <div class="name-info">
         <p class="tui-text_h5 name-info-user">{{ user.name }}</p>
-        <p class="tui-text_body-m-bold name-info-positon">
+        <p class="tui-text_body-m name-info-positon">
           {{ user.position }}
         </p>
       </div>
@@ -26,28 +26,28 @@
         <img class="img-fluid" src="../../../../assets/icon.png" />
       </span>
       <li>
-        <p class="tui-text_body-m-bold">
-          <strong class="info">Name : </strong> {{ user.name }}
+        <p class="tui-text_body-m">
+          <span class="info">Name : </span> {{ user.name }}
         </p>
       </li>
       <li>
-        <p class="tui-text_body-m-bold">
-          <strong class="info">Birthday : </strong> {{ user.birthday }}
+        <p class="tui-text_body-m">
+          <span class="info">Birthday : </span> {{ user.birthday }}
         </p>
       </li>
       <li>
-        <p class="tui-text_body-m-bold">
-          <strong class="info">Position : </strong> {{ user.position }}
+        <p class="tui-text_body-m">
+          <span class="info">Position : </span> {{ user.position }}
         </p>
       </li>
       <li>
-        <p class="tui-text_body-m-bold">
-          <strong class="info">Email : </strong> {{ user.email }}
+        <p class="tui-text_body-m">
+          <span class="info">Email : </span> {{ user.email }}
         </p>
       </li>
       <li>
-        <p class="tui-text_body-m-bold">
-          <strong class="info">Miltary Service : </strong>
+        <p class="tui-text_body-m" *ngIf="user.military_service">
+          <span class="info">Military Service : </span>
           {{ user.military_service }}
         </p>
       </li>

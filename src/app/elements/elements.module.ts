@@ -15,6 +15,7 @@ import { TuiButtonModule, TuiScrollbarModule } from '@taiga-ui/core';
 import { TuiAccordionModule } from '@taiga-ui/kit';
 import { allIcons, NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
 import { EducationComponent } from './components/education/education.component';
+import { TuiLinkModule } from '@taiga-ui/core';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { EducationComponent } from './components/education/education.component';
     TuiScrollbarModule,
     TuiButtonModule,
     NgxBootstrapIconsModule.pick(allIcons),
+    TuiLinkModule,
   ],
 })
 export class ElementsModule {}

@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { navbarItems, user } from 'src/app/data/user';
 
 @Component({
   selector: 'app-right-side-menu',
@@ -7,7 +8,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class RightSideMenuComponent implements OnInit {
   @Output() buttonClicked: EventEmitter<boolean> = new EventEmitter();
-
+  items = navbarItems;
+  user: any = user;
   constructor() {}
 
   ngOnInit(): void {}

@@ -1,1 +1,23 @@
-<p>contact works!</p>
+<div>
+  <p class="tui-text_h5 header tui-col_xs-12 tui-col_md-3 tui-col_lg-3">
+    {{ user.contact.name }}
+  </p>
+  <ul class="list">
+    <li><span>Mobile UAE :</span> {{ user.contact.mobileUae }}</li>
+    <li><span>Mobile Egy :</span> {{ user.contact.mobileEgy }}</li>
+    <li><span>Mobile KSA :</span> {{ user.contact.mobileKsa }}</li>
+    <li>
+      <span>E-mail : </span>
+      <a target="_blank" tuiLink [href]="'mailto:' + user.contact.email">{{
+        user.contact.email
+      }}</a>
+    </li>
+    <li>
+      <span>LinkedIn : </span>
+      <a target="_blank" tuiLink [href]="user.contact.linkedIn">{{
+        user.contact.linkedIn
+      }}</a>
+    </li>
+    <li><span>Address :</span> {{ user.contact.address }}</li>
+  </ul>
+</div>

@@ -24,7 +24,7 @@ nav {
     background: var(--tui-primary-hover);
   }
   .item {
-    color: var(--tui-text-02);
+    color: var(--tui-text-01);
     padding: 20px 13px;
     margin: 0;
     text-transform: uppercase;
@@ -33,12 +33,17 @@ nav {
     transition: 0.4s all ease-in-out;
     position: relative;
     cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
   }
   .item:hover {
     color: var(--tui-primary);
   }
   .active {
     color: var(--tui-primary);
+  }
+  li {
+    position: relative;
   }
 }
 
@@ -52,7 +57,7 @@ nav {
   padding: 2px;
   margin: 0px 3px;
   border-radius: 50%;
-  color: #555555d9;
+  color: var(--tui-text-01);
   text-align: center;
   line-height: 23px;
   font-size: 20px;

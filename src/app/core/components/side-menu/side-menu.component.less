@@ -17,12 +17,14 @@
 .header-wrapper {
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 .info {
-  color: #555555d9;
+  color: var(--tui-text-01);
 }
 .name-info-user {
   color: var(--tui-primary);
+  margin-bottom: 5px;
 }
 .name-info-positon {
   color: var(--tui-text-02);
@@ -140,5 +142,6 @@ li p {
   }
   .close-btn {
     display: unset;
+    margin-right: -20px;
   }
 }

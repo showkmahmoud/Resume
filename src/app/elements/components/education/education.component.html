@@ -1,1 +1,16 @@
-<p>education works!</p>
+<div class="education tui-row tui-row_adaptive row-wrapper">
+  <p class="tui-text_h5 header tui-col_xs-12 tui-col_md-3 tui-col_lg-3">
+    {{ user.education.name }}
+  </p>
+  <ul class="list t">
+    <li
+      class="p-content tui-text_body-m"
+      *ngFor="let item of user.education.content"
+    >
+      <p class="tui-text_body-m-bold">{{ item.level }}</p>
+      <p>{{ item.time }}</p>
+      <p>{{ item.location }}</p>
+      <p>Overall Grade : {{ item.grade }}</p>
+    </li>
+  </ul>
+</div>
