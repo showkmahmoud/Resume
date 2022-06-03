@@ -11,20 +11,30 @@
     </li>
   </ul>
 
-  <div class="tui-row tui-row_adaptive social-icon-wrapper">
-    <a
-      class="social-icon"
-      *ngFor="let icon of user.socialMedia"
-      tuiLink
-      [attr.href]="icon?.link"
-      target="_blank"
-    >
-      <i-bs
-        [name]="icon.iconName"
-        [width]="icon.iconSize"
-        [height]="icon.iconSize"
+  <div class="left-side-wrapper">
+    <div class="tui-row tui-row_adaptive social-icon-wrapper">
+      <a
+        class="social-icon"
+        *ngFor="let icon of user.socialMedia"
+        tuiLink
+        [attr.href]="icon?.link"
+        target="_blank"
       >
-      </i-bs>
+        <i-bs
+          [name]="icon.iconName"
+          [width]="icon.iconSize"
+          [height]="icon.iconSize"
+        >
+        </i-bs>
+      </a>
+    </div>
+    <a
+      class="download-wrapper"
+      target="_blank"
+      [href]="'mailto:' + user.contact.email"
+    >
+      <p>Hire Me</p>
+      <i class="fa fa-envelope-open download-btn"></i>
     </a>
   </div>
 </nav>

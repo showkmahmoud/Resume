@@ -1,6 +1,10 @@
 <div class="right-side-menu">
   <div class="icon-wrapper">
-    <i class="fa fa-home fa-2x home-icon" routerLink="home"></i>
+    <i
+      class="fa fa-home fa-2x home-icon"
+      (click)="onClose()"
+      routerLink="home"
+    ></i>
     <button
       tuiButton
       appearance="icon"
@@ -37,4 +41,12 @@
       </i-bs>
     </a>
   </div>
+  <a
+    class="download-wrapper"
+    target="_blank"
+    [href]="'mailto:' + user.contact.email"
+  >
+    <p>Hire ME</p>
+    <i class="fa fa-download download-btn"></i>
+  </a>
 </div>

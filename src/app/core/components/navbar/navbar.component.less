@@ -46,7 +46,10 @@ nav {
     position: relative;
   }
 }
-
+.left-side-wrapper {
+  display: flex;
+  align-items: center;
+}
 .social-icon-wrapper {
   margin: 0px 10px;
   flex-wrap: nowrap;
@@ -66,4 +69,37 @@ nav {
 }
 .social-icon:hover {
   color: var(--tui-primary);
+}
+.download-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  border: 0;
+  border-radius: 50px;
+  padding: 5px 20px;
+  line-height: 35px;
+  margin: 35px 20px 35px 0;
+  width: 40%;
+  background: var(--tui-primary);
+  color: var(--tui-base-01);
+  cursor: pointer;
+  text-decoration: none;
+  p {
+    margin: 0;
+  }
+}
+.download-btn {
+  margin-left: 20px;
+  color: var(--tui-text-01);
+  background: var(--tui-base-01);
+  margin-left: 15px;
+  border-radius: 50px;
+  font-size: 17px;
+  height: 30px;
+  width: 30px;
+  float: right;
+  text-align: center;
+  line-height: 29px;
 }

@@ -42,7 +42,7 @@
       </li>
       <li>
         <p class="tui-text_body-m">
-          <span class="info">Email : </span> {{ user.email }}
+          <span class="info">Email : </span> <span>{{ user.email }}</span>
         </p>
       </li>
       <li>
@@ -52,14 +52,9 @@
         </p>
       </li>
     </ul>
-
-    <button
-      tuiButton
-      class="btn"
-      iconRight="tuiIconDownloadLarge"
-      (click)="onDownload()"
-    >
-      Download CV
-    </button>
+    <div class="download-wrapper" (click)="onDownload()">
+      <p>Download CV</p>
+      <i class="fa fa-download download-btn"></i>
+    </div>
   </tui-scrollbar>
 </nav>
