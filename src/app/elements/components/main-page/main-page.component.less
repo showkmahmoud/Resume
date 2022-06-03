@@ -23,10 +23,59 @@
     background: var(--tui-base-01);
     text-align: center;
     padding: 10px 15px;
-    width: 200px;
-    height: 200px;
+    min-width: 200px;
+    min-height: 150px;
     position: relative;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.25);
+    .theme-option {
+      display: flex;
+      justify-content: center;
+      .theme-item {
+        width: 50%;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        position: relative;
+        cursor: pointer;
+      }
+      .theme-item::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        height: 3px;
+        width: 98%;
+        -webkit-transition: 0.4s all ease-in-out;
+        transition: 0.4s all ease-in-out;
+        background-color: rgba(0, 0, 0, 0.25);
+      }
+      .activeTheme::after {
+        background: var(--tui-primary);
+      }
+    }
+    .color-options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .color-item {
+        width: 19%;
+        height: 30px;
+        margin: 6px;
+        cursor: pointer;
+        position: relative;
+        .check-icon {
+          position: absolute;
+          transition: 0.4s all ease-in-out;
+          top: 5px;
+          left: 10px;
+          font-size: 30px;
+          color: var(--tui-base-01);
+          opacity: 0;
+        }
+        .active {
+          opacity: 1;
+        }
+      }
+    }
   }
   .btn-setting {
     background: var(--tui-base-01);
@@ -89,6 +138,7 @@
     color: var(--tui-text-01);
     position: relative;
     padding: 0;
+    margin-bottom: 40px;
   }
   .header::before {
     content: "";
@@ -149,12 +199,12 @@
   }
 }
 
-@media (max-width: 79.9375em) {
+@media (max-width: 74.9375em) {
   .toggle_btn {
     display: none;
   }
 }
-@media screen and (max-width: 47.9375em) {
+@media (max-width: 47.9375em) {
   .main-navigation {
     display: none;
   }

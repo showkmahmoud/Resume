@@ -8,15 +8,26 @@ import { Component, OnInit } from '@angular/core';
 export class MainPageComponent implements OnInit {
   menuOpen: boolean = false;
   rightMenuOpen: boolean = false;
-  value: any = {
-    mode: 'light',
-    primaryColor: '',
-  };
+  mode: string = 'light';
   settingWidth: boolean = false;
+  colors: string[] = [
+    '#1260d6',
+    '#52bf00',
+    '#d81300',
+    '#BF55EC',
+    '#00b4d9',
+    '#425cbb',
+    '#029A83',
+    '#ABB7B7',
+    '',
+  ];
+  themes: string[] = ['light', 'dark'];
+  selectedColor: any;
+  selectedTheme: any = 'light';
   constructor() {}
 
   ngOnInit(): void {
-    this.updateStyles();
+    this.updateStyles('#1260d6');
   }
   toggleMenu(menuOpen: boolean) {
     this.menuOpen = menuOpen;
@@ -24,30 +35,31 @@ export class MainPageComponent implements OnInit {
   toggleRightMenu(rightMenuOpen: boolean) {
     this.rightMenuOpen = rightMenuOpen;
   }
+  onOpenStyleSettings() {
+    this.settingWidth = !this.settingWidth;
+  }
   onClose() {
     this.menuOpen = false;
   }
   onCloseRightMenu() {
     this.rightMenuOpen = false;
   }
-  updateStyles() {
+  updateStyles(item: string) {
     // If empty assign default.
     document.documentElement.style.setProperty(
       '--tui-primary',
-      this.value.primaryColor || '#0060ff'
+      item || '#0060ff'
     );
-
-    // TODO - Depending on the mode, different styles will be applied,
-    if (this.value.mode) {
-    } else {
-    }
+    document.documentElement.style.setProperty(
+      '--tui-primary-hover',
+      item || '#0060ff'
+    );
+    this.selectedColor = item;
+    this.settingWidth = false;
   }
-  onChangeStyle() {
-    this.settingWidth = !this.settingWidth;
-    //   if (this.settingWidth) {
-    //     this.settingWidth = 0;
-    //   } else {
-    //     this.settingWidth = 400;
-    //   }
+  onChangeTheme(theme: string) {
+    this.mode = theme;
+    this.selectedTheme = theme;
+    this.settingWidth = false;
   }
 }

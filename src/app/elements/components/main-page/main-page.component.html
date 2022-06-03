@@ -1,14 +1,37 @@
-<tui-theme-night *ngIf="value?.mode == 'dark'"></tui-theme-night>
+<tui-theme-night *ngIf="mode == 'dark'"></tui-theme-night>
 <div class="theme-settings" [ngClass]="{ open: settingWidth }">
   <div class="color-settings">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione
-    corporis delectus dicta omnis natus at quaerat earum, eligendi id.
+    <div class="theme-option">
+      <ng-container *ngFor="let item of themes">
+        <p
+          class="tui-text_h6 theme-item"
+          [ngClass]="{ activeTheme: selectedTheme === item }"
+          (click)="onChangeTheme(item)"
+        >
+          {{ item }}
+        </p>
+      </ng-container>
+    </div>
+    <div class="color-options">
+      <ng-container *ngFor="let item of colors">
+        <div
+          class="color-item"
+          [ngStyle]="{ background: item }"
+          (click)="updateStyles(item)"
+        >
+          <i
+            class="fa fa-check check-icon"
+            [ngClass]="{ active: selectedColor === item }"
+          ></i>
+        </div>
+      </ng-container>
+    </div>
   </div>
   <div class="btn-setting">
     <button
       tuiButton
       appearance="icon"
-      (click)="onChangeStyle()"
+      (click)="onOpenStyleSettings()"
       size="m"
       icon="tuiIconSettingsLarge"
       class="close-btn"
