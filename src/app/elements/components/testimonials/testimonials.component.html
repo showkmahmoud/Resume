@@ -5,7 +5,7 @@
   <div class="tui-row tui-row_adaptive row-wrapper">
     <div
       *ngFor="let item of user.testimonials.clients.content"
-      class="tui-col_xs-7 tui-col_md-6 tui-col_lg-3"
+      class="tui-col_xs-11 tui-col_md-6 tui-col_lg-3 card"
     >
       <div class="img-wrapper">
         <img [src]="item" />
@@ -17,13 +17,34 @@
   <p class="tui-text_h5 header">
     {{ user.testimonials.testimonialData.name }}
   </p>
-  <div class="list">
-    <ng-container
-      *ngFor="let item of user.testimonials.testimonialData.content"
+  <div #carouselContainer>
+    <tui-carousel
+      class="carousel-wrapper"
+      [draggable]="true"
+      [itemsCount]="carouselContainer.offsetWidth <= 950 ? 1 : 3"
+      [(index)]="index"
     >
-      <div class="img-wrapper">
-        <img [src]="item" />
-      </div>
-    </ng-container>
+      <ng-container
+        *ngFor="
+          let item of user.testimonials.testimonialData.content;
+          let i = index
+        "
+      >
+        <div
+          *tuiItem
+          draggable="false"
+          class="testimonial-card"
+          [ngClass]="{ item_active: i === index + 1 }"
+        >
+          <img [src]="item" class="item" />
+        </div>
+      </ng-container>
+    </tui-carousel>
+    <tui-pagination
+      size="s"
+      class="pagination"
+      [length]="items.length"
+      [(index)]="index"
+    ></tui-pagination>
   </div>
 </div>

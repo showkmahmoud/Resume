@@ -106,7 +106,7 @@ export const user = {
     ],
   },
   contact: {
-    name: 'Contact',
+    name: 'Contact Me',
     email: 'alaamuhammed92@gmail.com',
     address: 'Dubai, United Arab Emirates    ',
     mobileUae: '+971581084741',
@@ -119,13 +119,23 @@ export const user = {
     clients: {
       name: 'Clients',
       content: [
-        '../assets/clients/GSK.jpg',
+        '../assets/clients/gsk.png',
+        '../assets/clients/Sanofi-Logo.png',
+        '../assets/clients/gsk.png',
         '../assets/clients/Sanofi-Logo.png',
       ],
     },
     testimonialData: {
       name: 'Testimonials',
-      content: [],
+      content: [
+        '../assets/clients/gsk.png',
+        '../assets/clients/Sanofi-Logo.png',
+        '../assets/clients/gsk.png',
+        '../assets/clients/Sanofi-Logo.png',
+        '../assets/clients/Sanofi-Logo.png',
+        '../assets/clients/gsk.png',
+        '../assets/clients/Sanofi-Logo.png',
+      ],
     },
   },
 };
@@ -136,11 +146,11 @@ export const navbarItems = [
     link: 'resume',
     name: 'Working History',
   },
+  { link: 'testimonials', name: 'Testimonials' },
   {
     link: 'portfolio',
     name: 'Portfolio',
   },
-  { link: 'testimonials', name: 'Testimonials' },
   {
     link: 'contact',
     name: 'Contact',

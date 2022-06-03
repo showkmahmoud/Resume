@@ -12,7 +12,7 @@ import { TuiActiveZoneModule } from '@taiga-ui/cdk';
 import { CoreModule } from '../core/core.module';
 import { TuiSidebarModule } from '@taiga-ui/addon-mobile';
 import { TuiButtonModule, TuiScrollbarModule } from '@taiga-ui/core';
-import { TuiAccordionModule } from '@taiga-ui/kit';
+import { TuiAccordionModule, TuiPaginationModule } from '@taiga-ui/kit';
 import { allIcons, NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
 import { EducationComponent } from './components/education/education.component';
 import { TuiLinkModule } from '@taiga-ui/core';
@@ -49,6 +49,7 @@ import { TuiDialogModule, TuiRootModule } from '@taiga-ui/core';
     TuiCarouselModule,
     TuiDialogModule,
     TuiRootModule,
+    TuiPaginationModule,
   ],
 })
 export class ElementsModule {}

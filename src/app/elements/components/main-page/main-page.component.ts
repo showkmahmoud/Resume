@@ -16,10 +16,9 @@ export class MainPageComponent implements OnInit {
     '#d81300',
     '#BF55EC',
     '#00b4d9',
-    '#425cbb',
+    '#af0f5f',
     '#029A83',
     '#ABB7B7',
-    '',
   ];
   themes: string[] = ['light', 'dark'];
   selectedColor: any;
