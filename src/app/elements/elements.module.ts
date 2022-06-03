@@ -17,6 +17,10 @@ import { allIcons, NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
 import { EducationComponent } from './components/education/education.component';
 import { TuiLinkModule } from '@taiga-ui/core';
 import { TuiThemeNightModule, TuiModeModule } from '@taiga-ui/core';
+import { SkillsComponent } from './components/skills/skills.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { TuiCarouselModule } from '@taiga-ui/kit';
+import { TuiDialogModule, TuiRootModule } from '@taiga-ui/core';
 
 @NgModule({
   declarations: [
@@ -26,6 +30,8 @@ import { TuiThemeNightModule, TuiModeModule } from '@taiga-ui/core';
     PortfolioComponent,
     ContactComponent,
     EducationComponent,
+    SkillsComponent,
+    TestimonialsComponent,
   ],
   imports: [
     CommonModule,
@@ -40,6 +46,9 @@ import { TuiThemeNightModule, TuiModeModule } from '@taiga-ui/core';
     TuiLinkModule,
     TuiThemeNightModule,
     TuiModeModule,
+    TuiCarouselModule,
+    TuiDialogModule,
+    TuiRootModule,
   ],
 })
 export class ElementsModule {}

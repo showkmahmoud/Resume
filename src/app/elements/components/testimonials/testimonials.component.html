@@ -1,0 +1,29 @@
+<div class="clients">
+  <p class="tui-text_h5 header">
+    {{ user.testimonials.clients.name }}
+  </p>
+  <div class="tui-row tui-row_adaptive row-wrapper">
+    <div
+      *ngFor="let item of user.testimonials.clients.content"
+      class="tui-col_xs-7 tui-col_md-6 tui-col_lg-3"
+    >
+      <div class="img-wrapper">
+        <img [src]="item" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="testimonials-data">
+  <p class="tui-text_h5 header">
+    {{ user.testimonials.testimonialData.name }}
+  </p>
+  <div class="list">
+    <ng-container
+      *ngFor="let item of user.testimonials.testimonialData.content"
+    >
+      <div class="img-wrapper">
+        <img [src]="item" />
+      </div>
+    </ng-container>
+  </div>
+</div>

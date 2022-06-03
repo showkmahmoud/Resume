@@ -16,6 +16,7 @@
       *ngFor="let item of items"
       routerLinkActive="active"
       [routerLink]="item.link"
+      (click)="onClick()"
     >
       {{ item.name }}
     </li>

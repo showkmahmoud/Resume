@@ -1,3 +1,20 @@
+<tui-theme-night *ngIf="value?.mode == 'dark'"></tui-theme-night>
+<div class="theme-settings" [ngClass]="{ open: settingWidth }">
+  <div class="color-settings">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ratione
+    corporis delectus dicta omnis natus at quaerat earum, eligendi id.
+  </div>
+  <div class="btn-setting">
+    <button
+      tuiButton
+      appearance="icon"
+      (click)="onChangeStyle()"
+      size="m"
+      icon="tuiIconSettingsLarge"
+      class="close-btn"
+    ></button>
+  </div>
+</div>
 <nav class="mobile-nav">
   <button
     tuiIconButton

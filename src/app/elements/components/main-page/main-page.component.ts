@@ -8,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class MainPageComponent implements OnInit {
   menuOpen: boolean = false;
   rightMenuOpen: boolean = false;
+  value: any = {
+    mode: 'light',
+    primaryColor: '',
+  };
+  settingWidth: boolean = false;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.updateStyles();
+  }
   toggleMenu(menuOpen: boolean) {
     this.menuOpen = menuOpen;
   }
@@ -22,5 +29,25 @@ export class MainPageComponent implements OnInit {
   }
   onCloseRightMenu() {
     this.rightMenuOpen = false;
+  }
+  updateStyles() {
+    // If empty assign default.
+    document.documentElement.style.setProperty(
+      '--tui-primary',
+      this.value.primaryColor || '#0060ff'
+    );
+
+    // TODO - Depending on the mode, different styles will be applied,
+    if (this.value.mode) {
+    } else {
+    }
+  }
+  onChangeStyle() {
+    this.settingWidth = !this.settingWidth;
+    //   if (this.settingWidth) {
+    //     this.settingWidth = 0;
+    //   } else {
+    //     this.settingWidth = 400;
+    //   }
   }
 }

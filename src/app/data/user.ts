@@ -23,14 +23,14 @@ export const user = {
       link: 'https://www.facebook.com/PeparsMohamed',
       iconSize: 20,
     },
-    {
-      iconName: 'twitter',
-      link: '',
-      iconSize: 20,
-    },
+    // {
+    //   iconName: 'twitter',
+    //   link: '',
+    //   iconSize: 20,
+    // },
     {
       iconName: 'linkedin',
-      link: 'http://linkedin.com/in/alaa-muhammed-793065178',
+      link: 'https://www.linkedin.com/in/alaa-mohamed-shehata-793065178',
       iconSize: 20,
     },
     {
@@ -41,7 +41,8 @@ export const user = {
   ],
   skills: {
     name: 'Skills',
-    content: '',
+    content:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis saepe reprehenderit autem blanditiis ab quia in tempora sunt rerum adipisci!',
   },
   education: {
     name: 'Education History',
@@ -112,10 +113,24 @@ export const user = {
     mobileEgy: '+201099442346',
     mobileKsa: '+966595071868',
     postion: 'Events Account Manger',
-    linkedIn: 'http://linkedin.com/in/alaa-muhammed-793065178',
+    linkedIn: 'https://www.linkedin.com/in/alaa-mohamed-shehata-793065178',
+  },
+  testimonials: {
+    clients: {
+      name: 'Clients',
+      content: [
+        '../assets/clients/GSK.jpg',
+        '../assets/clients/Sanofi-Logo.png',
+      ],
+    },
+    testimonialData: {
+      name: 'Testimonials',
+      content: [],
+    },
   },
 };
 export const navbarItems = [
+  { link: 'skills', name: 'Skills' },
   { link: 'education', name: 'Education History' },
   {
     link: 'resume',
@@ -125,6 +140,7 @@ export const navbarItems = [
     link: 'portfolio',
     name: 'Portfolio',
   },
+  { link: 'testimonials', name: 'Testimonials' },
   {
     link: 'contact',
     name: 'Contact',

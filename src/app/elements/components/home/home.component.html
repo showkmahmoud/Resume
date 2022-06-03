@@ -2,15 +2,13 @@
   <p class="tui-text_h5 header tui-col_xs-12 tui-col_md-3 tui-col_lg-3">
     {{ user.about.name }}
   </p>
-  <div class="tui-col_xs-12 tui-col_md-9 tui-col_lg-8">
-    <p class="p-content tui-text_body-m">{{ user.about.content }}</p>
-    <p class="tui-text_body-m" *ngFor="let item of user.about.achievement">
+  <ul class="list about-list">
+    <li class="p-content tui-text_body-m">{{ user.about.content }}</li>
+    <li
+      class="p-content tui-text_body-m"
+      *ngFor="let item of user.about.achievement"
+    >
       {{ item }}
-    </p>
-  </div>
-</div>
-<div class="skills tui-row tui-row_adaptive row-wrapper">
-  <p class="tui-text_h5 header">{{ user.skills.name }}</p>
-  <div class="divider"></div>
-  <p class="p-content tui-text_body-m">{{ user.skills.content }}</p>
+    </li>
+  </ul>
 </div>

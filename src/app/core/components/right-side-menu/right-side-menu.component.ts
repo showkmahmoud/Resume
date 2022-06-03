@@ -13,6 +13,9 @@ export class RightSideMenuComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+  onClick() {
+    this.buttonClicked.emit(true);
+  }
   onClose() {
     this.buttonClicked.emit(true);
   }
