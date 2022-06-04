@@ -41,8 +41,13 @@ export const user = {
   ],
   skills: {
     name: 'Skills',
-    content:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis saepe reprehenderit autem blanditiis ab quia in tempora sunt rerum adipisci!',
+    content: [
+      'Advanced in Event Management and Project Management.',
+      'Intermediate in Negotiation.',
+      ` Little knowledge in Training Needs Analysis, Business Development, Business Analysis, Veeva, Healthcare
+  Marketing, Market Analysis, Operations Management, Marketing, Sales, Microsoft Office 365, Chemical
+  Analysis and Presentations.`,
+    ],
   },
   education: {
     name: 'Education History',
@@ -141,10 +146,10 @@ export const user = {
 };
 export const navbarItems = [
   { link: 'skills', name: 'Skills' },
-  { link: 'education', name: 'Education History' },
+  { link: 'education', name: 'Education' },
   {
     link: 'resume',
-    name: 'Working History',
+    name: 'Resume',
   },
   { link: 'testimonials', name: 'Testimonials' },
   {

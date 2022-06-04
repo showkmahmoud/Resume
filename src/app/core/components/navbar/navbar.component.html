@@ -1,40 +1,57 @@
-<nav class="navbar">
-  <ul class="tui-row tui-row_adaptive items-wrapper">
-    <i class="fa fa-home fa-3x home-icon" routerLink="home"></i>
+<nav class="navbar mobile-navbar">
+  <ul>
+    <i
+      class="fa fa-home fa-3x home-icon mobile-home-page"
+      routerLink="home"
+    ></i>
+    <li class="navbar-toggle">
+      <button
+        tuiIconButton
+        type="button"
+        (click)="toggleMenu()"
+        icon="tuiIconAlignJustifyLarge"
+        appearance="icon"
+        size="m"
+      ></button>
+    </li>
+
+    <ul>
+      <i
+        class="fa fa-home fa-3x home-icon desktop-home-page"
+        routerLink="home"
+      ></i>
+      <li
+        class="navbar-item link"
+        *ngFor="let item of items"
+        [ngClass]="{
+          'navbar-hide': menuOpen
+        }"
+      >
+        <a
+          routerLinkActive="active"
+          class="link"
+          [routerLink]="item.link"
+          tuiLink
+          (click)="onClick()"
+        >
+          <span class="tui-text_body-m item-name">{{ item?.name }}</span>
+        </a>
+      </li>
+    </ul>
     <li
-      class="item"
-      *ngFor="let item of items"
-      routerLinkActive="active"
-      [routerLink]="item.link"
+      class="navbar-item link"
+      [ngClass]="{
+        'navbar-hide': menuOpen
+      }"
     >
-      {{ item.name }}
+      <a
+        class="navbar-item link download-wrapper"
+        target="_blank"
+        [href]="'mailto:' + user.contact.email"
+      >
+        <p>Hire Me</p>
+        <i class="fa fa-envelope-open download-btn"></i>
+      </a>
     </li>
   </ul>
-
-  <div class="left-side-wrapper">
-    <div class="tui-row tui-row_adaptive social-icon-wrapper">
-      <a
-        class="social-icon"
-        *ngFor="let icon of user.socialMedia"
-        tuiLink
-        [attr.href]="icon?.link"
-        target="_blank"
-      >
-        <i-bs
-          [name]="icon.iconName"
-          [width]="icon.iconSize"
-          [height]="icon.iconSize"
-        >
-        </i-bs>
-      </a>
-    </div>
-    <a
-      class="download-wrapper"
-      target="_blank"
-      [href]="'mailto:' + user.contact.email"
-    >
-      <p>Hire Me</p>
-      <i class="fa fa-envelope-open download-btn"></i>
-    </a>
-  </div>
 </nav>

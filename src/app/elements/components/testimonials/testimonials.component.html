@@ -13,11 +13,11 @@
     </div>
   </div>
 </div>
-<div class="testimonials-data">
+<div class="testimonials-data" #carouselContainer>
   <p class="tui-text_h5 header">
     {{ user.testimonials.testimonialData.name }}
   </p>
-  <div #carouselContainer>
+  <div>
     <tui-carousel
       class="carousel-wrapper"
       [draggable]="true"

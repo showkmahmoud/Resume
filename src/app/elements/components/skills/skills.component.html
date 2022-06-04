@@ -1,8 +1,10 @@
 <div class="skills tui-row tui-row_adaptive row-wrapper">
-  <p class="tui-text_h5 header tui-col_xs-12 tui-col_md-3 tui-col_lg-3">
+  <p class="tui-text_h5 header tui-col_xs-12 tui-col_md-3 tui-col_lg-4">
     {{ user.skills.name }}
   </p>
   <ul class="list skills-list">
-    <li class="p-content tui-text_body-m">{{ user.skills.content }}</li>
+    <ng-container *ngFor="let item of user.skills.content">
+      <li class="p-content tui-text_body-m">{{ item }}</li>
+    </ng-container>
   </ul>
 </div>
