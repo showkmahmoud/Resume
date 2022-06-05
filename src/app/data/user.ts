@@ -128,7 +128,7 @@ export const user = {
         '../assets/clients/Sanofi-Logo.png',
         '../assets/clients/astrazeneca.png',
         '../assets/clients/abbvie-vector-logo.png',
-        '../assets/clients/369-3693268_pfizer-logo-png.png',
+        '../assets/clients/pfizer.png',
       ],
     },
     testimonialData: {
@@ -244,27 +244,27 @@ export const user = {
         name: 'GSK',
         content: [
           {
-            description: 'Cycle Meetingt',
+            description: 'Cycle Meeting',
             img: '../assets/gsk/1.jpeg',
           },
           {
-            description: 'Cycle Meetingt',
+            description: 'Cycle Meeting',
             img: '../assets/gsk/2.jpeg',
           },
           {
-            description: 'Cycle Meetingt',
+            description: 'Cycle Meeting',
             img: '../assets/gsk/3.jpeg',
           },
           {
-            description: 'Cycle Meetingt',
+            description: 'Cycle Meeting',
             img: '../assets/gsk/4.jpeg',
           },
           {
-            description: 'Cycle Meetingt',
+            description: 'Cycle Meeting',
             img: '../assets/gsk/5.jpeg',
           },
           {
-            description: 'Cycle Meetingt',
+            description: 'Cycle Meeting',
             img: '../assets/gsk/6.jpeg',
           },
         ],
