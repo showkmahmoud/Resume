@@ -13,7 +13,7 @@
         </div>
         <div class="overlay"></div>
       </div>
-      <div class="card-info">
+      <div class="card-info" #carouselContainer>
         <button
           tuiIconButton
           appearance="primary"
@@ -44,7 +44,11 @@
               class="left-arrow"
               (click)="navigate(-1, item.content.length)"
             ></button>
-            <tui-carousel [(index)]="index">
+            <tui-carousel
+              [(index)]="index"
+              [draggable]="true"
+              [itemsCount]="carouselContainer.offsetWidth <= 950 ? 1 : 2"
+            >
               <ng-container
                 *ngFor="let carouselItem of item.content; let i = index"
               >
