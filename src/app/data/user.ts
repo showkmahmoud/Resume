@@ -128,6 +128,7 @@ export const user = {
         '../assets/clients/Sanofi-Logo.png',
         '../assets/clients/astrazeneca.png',
         '../assets/clients/abbvie-vector-logo.png',
+        '../assets/clients/369-3693268_pfizer-logo-png.png',
       ],
     },
     testimonialData: {
