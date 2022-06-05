@@ -47,7 +47,7 @@
   <div class="tui-row tui-row_adaptive landing-layout-wrapper">
     <div
       class="tui-col_xs-12 tui-col_md-3 tui-col_lg-3 main-navigation"
-      *ngIf="about === 'home' ? true : false"
+      [ngClass]="{ about_none: about !== 'home' ? true : false }"
     >
       <app-side-menu></app-side-menu>
     </div>
