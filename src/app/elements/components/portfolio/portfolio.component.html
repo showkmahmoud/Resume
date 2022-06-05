@@ -51,9 +51,11 @@
               [itemsCount]="carouselContainer.offsetWidth <= 950 ? 1 : 2"
             >
               <ng-container
-                *ngFor="let carouselItem of item.content; let i = index"
+                *ngFor="let carouselItem of item.content.imgs; let i = index"
               >
-                <p class="carousel-p" *tuiItem>{{ item.description }}</p>
+                <p class="carousel-p" *tuiItem>
+                  {{ item.content.description }}
+                </p>
               </ng-container>
             </tui-carousel>
             <button

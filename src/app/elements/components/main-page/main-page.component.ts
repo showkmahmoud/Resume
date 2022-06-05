@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-page',
@@ -21,7 +22,7 @@ export class MainPageComponent implements OnInit {
   themes: string[] = ['light', 'dark'];
   selectedColor: any;
   selectedTheme: any = 'light';
-  constructor() {}
+  constructor(private route: Router) {}
 
   ngOnInit(): void {
     this.updateStyles('0, 80, 211,');
