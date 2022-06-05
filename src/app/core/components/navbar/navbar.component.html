@@ -26,13 +26,13 @@
         [ngClass]="{
           'navbar-hide': menuOpen
         }"
+        (click)="onClick()"
       >
         <a
           routerLinkActive="active"
           class="link"
           [routerLink]="item.link"
           tuiLink
-          (click)="onClick()"
         >
           <span class="tui-text_body-m item-name">{{ item?.name }}</span>
         </a>
