@@ -1,6 +1,6 @@
-.card {
-  height: 150px;
-}
+// .card {
+//   height: 150px;
+// }
 .card-wrapper {
   overflow: hidden;
   position: relative;
@@ -51,16 +51,48 @@ img {
   border-top-right-radius: 5px;
 }
 .card-info {
-  color: var(--tui-base-01);
+  color: #fff;
   position: absolute;
-  transform: translate(200%, 20%);
+  left: 30%;
   top: -20%;
   opacity: 0;
   transition: 0.6s all ease-in-out;
   text-align: center;
+  width: 40%;
 }
 .card-wrapper:hover .card-info {
-  top: 15%;
+  top: 27%;
   opacity: 1;
-  // z-index: 555;
+}
+.carousel-img {
+  width: 750px;
+  min-height: 550px;
+  display: block;
+  object-fit: contain;
+  // margin-bottom: 50px;
+}
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 -5rem;
+  tui-carousel {
+    margin: -345px -100px -403px;
+  }
+  :host-context(tui-root._mobile) & {
+    margin: 0;
+
+    button {
+      display: none;
+    }
+  }
+}
+
+.left-arrow {
+  margin-right: 100px;
+}
+.right-arrow {
+  margin-left: 100px;
+}
+.pagination-items {
+  margin-top: 50px;
 }

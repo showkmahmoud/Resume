@@ -11,4 +11,16 @@ export class PortfolioComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+  open = false;
+
+  index = 0;
+
+  onClick(): void {
+    this.index = 0;
+    this.open = true;
+  }
+
+  navigate(delta: number, length: number): void {
+    this.index = (this.index + delta) % length;
+  }
 }

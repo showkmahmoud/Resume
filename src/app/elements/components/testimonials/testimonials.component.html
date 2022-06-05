@@ -21,7 +21,7 @@
     <tui-carousel
       class="carousel-wrapper"
       [draggable]="true"
-      [itemsCount]="carouselContainer.offsetWidth <= 950 ? 1 : 3"
+      [itemsCount]="carouselContainer.offsetWidth <= 650 ? 1 : 3"
       [(index)]="index"
     >
       <ng-container
@@ -43,7 +43,7 @@
     <tui-pagination
       size="s"
       class="pagination"
-      [length]="items.length"
+      [length]="user.testimonials.testimonialData.content.length"
       [(index)]="index"
     ></tui-pagination>
   </div>

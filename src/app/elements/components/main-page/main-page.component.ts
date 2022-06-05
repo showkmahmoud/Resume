@@ -57,7 +57,7 @@ export class MainPageComponent implements OnInit {
     );
     document.documentElement.style.setProperty(
       '--tui-overlay',
-      'rgba(' + item + ' .4)' || '#0060ff'
+      'rgba(' + item + ' .5)' || '#0060ff'
     );
     this.selectedColor = item;
     this.settingWidth = false;

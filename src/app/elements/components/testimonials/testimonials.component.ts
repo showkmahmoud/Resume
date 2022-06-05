@@ -9,15 +9,6 @@ import { user } from 'src/app/data/user';
 export class TestimonialsComponent implements OnInit {
   user: any = user;
   index = 0;
-
-  readonly items = [
-    'angular.svg',
-    'avatar.jpg',
-    'angular.svg',
-    'avatar.jpg',
-    'angular.svg',
-    'avatar.jpg',
-  ];
   constructor() {}
 
   ngOnInit(): void {}
