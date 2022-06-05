@@ -6,9 +6,10 @@
 .card-wrapper {
   overflow: hidden;
   position: relative;
-  margin: 10px;
   border-radius: 5px;
   padding: 0;
+  max-height: 200px;
+  margin-bottom: 30px;
 }
 .card-wrapper:hover .overlay,
 .card-wrapper:hover .overlay::before {
@@ -75,6 +76,13 @@ img {
   display: flex;
   align-items: flex-start;
   margin: 0 -5rem;
+  :host-context(tui-root._mobile) & {
+    margin: 0;
+
+    button {
+      display: none;
+    }
+  }
 }
 
 .carousel-header {
@@ -86,11 +94,9 @@ img {
 }
 
 .left-arrow {
-  margin-right: 100px;
   margin-top: -40%;
 }
 .right-arrow {
-  margin-left: 100px;
   margin-top: -40%;
 }
 .pagination-items {

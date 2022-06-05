@@ -143,54 +143,153 @@ export const user = {
   },
   portfolio: {
     name: 'Portfolio',
-    content: [
+    items: [
       {
         cover: '../assets/sanofi/2.jpg',
         name: 'Sanofi',
-        content: {
-          description: 'Type 2 inflammation in dermatology Summit',
-          imgs: [
-            '../assets/sanofi/1.jpg',
-            '../assets/sanofi/2.jpg',
-            '../assets/sanofi/3.jpg',
-            '../assets/sanofi/4.jpg',
-            '../assets/sanofi/5.jpg',
-            '../assets/sanofi/6.jpg',
-            '../assets/sanofi/7.jpg',
-            '../assets/sanofi/8.jpg',
-            '../assets/sanofi/9.jpg',
-            '../assets/sanofi/10.jpg',
-            '../assets/sanofi/11.jpg',
-            '../assets/sanofi/12.jpg',
-            '../assets/sanofi/13.jpg',
-            '../assets/sanofi/14.jpg',
-            '../assets/sanofi/15.jpg',
-          ],
-        },
+        content: [
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/1.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/2.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/3.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/4.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/5.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/6.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/7.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/8.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/9.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/10.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/11.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/12.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/13.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/14.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/15.jpg',
+          },
+        ],
       },
       {
         cover: '../assets/gsk/3.jpeg',
         name: 'GSK',
-        description: 'Cycle Meeting',
         content: [
-          '../assets/gsk/1.jpeg',
-          '../assets/gsk/2.jpeg',
-          '../assets/gsk/3.jpeg',
-          '../assets/gsk/4.jpeg',
-          '../assets/gsk/5.jpeg',
-          '../assets/gsk/6.jpeg',
+          {
+            description: 'Cycle Meetingt',
+            img: '../assets/gsk/1.jpeg',
+          },
+          {
+            description: 'Cycle Meetingt',
+            img: '../assets/gsk/2.jpeg',
+          },
+          {
+            description: 'Cycle Meetingt',
+            img: '../assets/gsk/3.jpeg',
+          },
+          {
+            description: 'Cycle Meetingt',
+            img: '../assets/gsk/4.jpeg',
+          },
+          {
+            description: 'Cycle Meetingt',
+            img: '../assets/gsk/5.jpeg',
+          },
+          {
+            description: 'Cycle Meetingt',
+            img: '../assets/gsk/6.jpeg',
+          },
         ],
       },
       {
         cover: '../assets/astraZeneca/1.jpg',
         name: 'AstraZeneca ',
-        description: 'Cardio-Renal Summit',
         content: [
-          '../assets/astraZeneca/1.jpg',
-          '../assets/astraZeneca/2.jpg',
-          '../assets/astraZeneca/3.jpg',
-          '../assets/astraZeneca/4.jpg',
-          '../assets/astraZeneca/5.jpg',
+          {
+            description: 'Cardio-Renal Summit',
+            img: '../assets/astraZeneca/1.jpg',
+          },
+          {
+            description: 'Cardio-Renal Summit',
+            img: '../assets/astraZeneca/2.jpg',
+          },
+          {
+            description: 'Cardio-Renal Summit',
+            img: '../assets/astraZeneca/3.jpg',
+          },
+          {
+            description: 'Cardio-Renal Summit',
+            img: '../assets/astraZeneca/4.jpg',
+          },
+          {
+            description: 'Cardio-Renal Summit',
+            img: '../assets/astraZeneca/5.jpg',
+          },
+        ],
+      },
+      {
+        cover: '../assets/pfizer/1.jpeg',
+        name: 'Pfizer',
+        content: [
+          {
+            description: 'Post operative pain event',
+            img: '../assets/pfizer/1.jpeg',
+          },
+          {
+            description: 'Post operative pain event',
+            img: '../assets/pfizer/2.jpeg',
+          },
+          {
+            description: 'Post operative pain event',
+            img: '../assets/pfizer/3.jpeg',
+          },
+          {
+            description: 'Post operative pain event',
+            img: '../assets/pfizer/4.jpeg',
+          },
+          {
+            description: 'Post operative pain event',
+            img: '../assets/pfizer/5.jpeg',
+          },
         ],
       },
     ],

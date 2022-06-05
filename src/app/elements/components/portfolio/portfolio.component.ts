@@ -22,12 +22,11 @@ export class PortfolioComponent implements OnInit {
   get background(): any {
     for (
       this.index;
-      this.index <=
-      this.user.portfolio.content[this.itemIndex].content.imgs.length;
+      this.index <= this.user.portfolio.items[this.itemIndex].content.length;
       this.index++
     ) {
       return `url(${
-        this.user.portfolio.content[this.itemIndex].content.imgs[this.index]
+        this.user.portfolio.items[this.itemIndex].content[this.index].img
       })`;
     }
   }
