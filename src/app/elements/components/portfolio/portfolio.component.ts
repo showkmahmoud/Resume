@@ -12,12 +12,23 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit(): void {}
   open = false;
-
+  itemIndex = 0;
   index = 0;
-
-  onClick(): void {
+  onClick(i: number): void {
     this.index = 0;
+    this.itemIndex = i;
     this.open = true;
+  }
+  get background(): any {
+    for (
+      this.index;
+      this.index <= this.user.portfolio.content[this.itemIndex].content.length;
+      this.index++
+    ) {
+      return `url(${
+        this.user.portfolio.content[this.itemIndex].content[this.index]
+      })`;
+    }
   }
 
   navigate(delta: number, length: number): void {

@@ -70,7 +70,7 @@ export const user = {
     name: 'Working History',
     content: [
       {
-        position: 'Events Account Manager at Caduceus Lane',
+        position: 'Key Account Manager at Caduceus Lane',
         location: 'Dubai, United Arab Emirates',
         time: 'Oct 2021 to Present',
         content:
@@ -149,7 +149,7 @@ export const user = {
       {
         cover: '../assets/sanofi/2.jpg',
         name: 'Sanofi',
-        description: '',
+        description: 'Type 2 inflammation in dermatology Summit',
         content: [
           '../assets/sanofi/1.jpg',
           '../assets/sanofi/2.jpg',

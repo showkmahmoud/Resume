@@ -64,35 +64,44 @@ img {
   top: 27%;
   opacity: 1;
 }
-.carousel-img {
-  width: 750px;
-  min-height: 550px;
-  display: block;
-  object-fit: contain;
-  // margin-bottom: 50px;
+.carousel-p {
+  margin: 0;
+}
+@import "~@taiga-ui/core/styles/taiga-ui-local";
+:host ::ng-deep tui-dialog {
+  div.t-content.ng-tns-c92-5 {
+    display: none !important;
+  }
 }
 .carousel-wrapper {
   display: flex;
   align-items: center;
   margin: 0 -5rem;
-  tui-carousel {
-    margin: -345px -100px -403px;
-  }
+
   :host-context(tui-root._mobile) & {
     margin: 0;
-
     button {
       display: none;
     }
   }
 }
 
+.carousel-header {
+  .transition(background);
+  height: 25rem;
+  flex: 1;
+  background: var(--tui-base-01) center;
+  background-size: cover;
+}
+
 .left-arrow {
   margin-right: 100px;
+  margin-top: -80%;
 }
 .right-arrow {
   margin-left: 100px;
+  margin-top: -80%;
 }
 .pagination-items {
-  margin-top: 50px;
+  margin-top: 20px;
 }
