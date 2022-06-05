@@ -20,27 +20,10 @@ export class PortfolioComponent implements OnInit {
     this.open = true;
   }
   get background(): any {
-    for (
-      this.index;
-      this.index <= this.user.portfolio.items[this.itemIndex].content.length;
-      this.index++
-    ) {
-      return `url(${
-        this.user.portfolio.items[this.itemIndex].content[this.index].img
-      })`;
-    }
+    return `url(${
+      this.user.portfolio.items[this.itemIndex].content[this.index].img
+    })`;
   }
-  get description(): any {
-    for (
-      this.index;
-      this.index <= this.user.portfolio.items[this.itemIndex].content.length;
-      this.index++
-    ) {
-      return this.user.portfolio.items[this.itemIndex].content[this.index]
-        .description;
-    }
-  }
-
   navigate(delta: number, length: number): void {
     this.index = (this.index + delta) % length;
   }

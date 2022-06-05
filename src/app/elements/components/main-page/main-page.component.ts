@@ -73,6 +73,5 @@ export class MainPageComponent implements OnInit {
   }
   getUrl(item: any) {
     this.about = item;
-    console.log(this.about);
   }
 }

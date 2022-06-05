@@ -208,6 +208,34 @@ export const user = {
             description: 'Type 2 inflammation in dermatology Summit',
             img: '../assets/sanofi/15.jpg',
           },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/16.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/17.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/18.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/19.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/20.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/21.jpg',
+          },
+          {
+            description: 'Type 2 inflammation in dermatology Summit',
+            img: '../assets/sanofi/22.jpg',
+          },
         ],
       },
       {
@@ -263,6 +291,43 @@ export const user = {
           {
             description: 'Cardio-Renal Summit',
             img: '../assets/astraZeneca/5.jpg',
+          },
+          {
+            description: 'Cardio-Renal Summit',
+            img: '../assets/astraZeneca/6.jpg',
+          },
+          {
+            description: 'Cardio-Renal Summit',
+            img: '../assets/astraZeneca/7.jpg',
+          },
+          {
+            description: 'Cardio-Renal Summit',
+            img: '../assets/astraZeneca/8.jpg',
+          },
+          {
+            description: 'Cardio-Renal Summit',
+            img: '../assets/astraZeneca/9.jpg',
+          },
+          {
+            description: 'Cardio-Renal Summit',
+            img: '../assets/astraZeneca/10.jpg',
+          },
+          {
+            description: 'Cardio-Renal Summit',
+            img: '../assets/astraZeneca/11.jpg',
+          },
+          {
+            description: 'Cardio-Renal Summit',
+            img: '../assets/astraZeneca/12.jpg',
+          },
+
+          {
+            description: 'Cardio-Renal Summit',
+            img: '../assets/astraZeneca/13.jpg',
+          },
+          {
+            description: 'Cardio-Renal Summit',
+            img: '../assets/astraZeneca/14.jpg',
           },
         ],
       },
