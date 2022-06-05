@@ -143,6 +143,17 @@ export const user = {
       ],
     },
   },
+  portfolio: {
+    name: 'Portfolio',
+    content: [
+      {
+        cover: '../assets/sanofi/2.jpg',
+        name: 'Sanofi',
+        description: '',
+        content: [],
+      },
+    ],
+  },
 };
 export const navbarItems = [
   { link: 'skills', name: 'Skills' },

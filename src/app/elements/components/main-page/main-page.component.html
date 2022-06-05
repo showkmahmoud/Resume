@@ -16,7 +16,7 @@
       <ng-container *ngFor="let item of colors">
         <div
           class="color-item"
-          [ngStyle]="{ background: item }"
+          [ngStyle]="{ background: 'rgba(' + item + ' 1)' }"
           (click)="updateStyles(item)"
         >
           <i

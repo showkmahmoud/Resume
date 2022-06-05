@@ -11,14 +11,12 @@ export class MainPageComponent implements OnInit {
   mode: string = 'light';
   settingWidth: boolean = false;
   colors: string[] = [
-    '#1260d6',
-    '#52bf00',
-    '#d81300',
-    '#BF55EC',
-    '#00b4d9',
-    '#af0f5f',
-    '#029A83',
-    '#ABB7B7',
+    '0, 80, 211,',
+    '234, 44, 25,',
+    '0, 180, 217,',
+    '191, 85, 236,',
+    '2, 154, 131,',
+    '246, 36, 89,',
   ];
   themes: string[] = ['light', 'dark'];
   selectedColor: any;
@@ -26,7 +24,7 @@ export class MainPageComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.updateStyles('#1260d6');
+    this.updateStyles('0, 80, 211,');
   }
   toggleMenu(menuOpen: boolean) {
     this.menuOpen = menuOpen;
@@ -47,11 +45,19 @@ export class MainPageComponent implements OnInit {
     // If empty assign default.
     document.documentElement.style.setProperty(
       '--tui-primary',
-      item || '#0060ff'
+      'rgba(' + item + ' 1)' || '#0060ff'
     );
     document.documentElement.style.setProperty(
       '--tui-primary-hover',
-      item || '#0060ff'
+      'rgba(' + item + ' .8)' || '#0060ff'
+    );
+    document.documentElement.style.setProperty(
+      '--tui-primary-active',
+      'rgba(' + item + ' 1)' || '#0060ff'
+    );
+    document.documentElement.style.setProperty(
+      '--tui-overlay',
+      'rgba(' + item + ' .4)' || '#0060ff'
     );
     this.selectedColor = item;
     this.settingWidth = false;

@@ -14,7 +14,7 @@
 }
 .theme-settings {
   position: fixed;
-  left: -235px;
+  left: -150px;
   top: 35%;
   z-index: 99;
   margin: 0;
@@ -23,8 +23,8 @@
     background: var(--tui-base-01);
     text-align: center;
     padding: 10px 15px;
-    min-width: 200px;
-    min-height: 150px;
+    min-width: 120px;
+    min-height: 120px;
     position: relative;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.25);
     .theme-option {
@@ -57,9 +57,9 @@
       flex-wrap: wrap;
       justify-content: space-between;
       .color-item {
-        width: 19%;
+        width: 30%;
         height: 30px;
-        margin: 6px;
+        margin: 2px;
         border-radius: 4px;
         cursor: pointer;
         position: relative;
@@ -127,13 +127,14 @@
   display: none;
 }
 .elements {
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 20px;
-  padding: 40px 20px;
+  padding: 20px 20px 30px;
   border-radius: 10px;
   background-color: var(--tui-base-01);
   -webkit-box-shadow: 0 0 5px 1px rgb(0 0 0 / 18%);
   box-shadow: 0 0 5px 1px rgb(0 0 0 / 18%);
+  min-height: 400px;
 }
 :host ::ng-deep .elements {
   .row-wrapper {
@@ -145,7 +146,7 @@
     position: relative;
     padding: 0;
     margin-bottom: 40px;
-    // white-space: nowrap;
+    white-space: nowrap;
   }
   .header::before {
     content: "";
