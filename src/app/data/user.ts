@@ -2,7 +2,7 @@ export const user = {
   img: '../assets/user.jpeg',
   name: 'Alaa Muhammed',
   birthday: '4th of November 1992',
-  position: 'Events Account Manger',
+  position: 'Key Account Manger',
   email: 'alaamuhammed92@gmail.com',
   military_service: 'Finished',
   about: {
