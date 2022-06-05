@@ -19,6 +19,7 @@ export class MainPageComponent implements OnInit {
     '2, 154, 131,',
     '246, 36, 89,',
   ];
+  about: any;
   themes: string[] = ['light', 'dark'];
   selectedColor: any;
   selectedTheme: any = 'light';
@@ -26,6 +27,8 @@ export class MainPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.updateStyles('0, 80, 211,');
+    const url = this.route.url.split('/')[2];
+    this.getUrl(url);
   }
   toggleMenu(menuOpen: boolean) {
     this.menuOpen = menuOpen;
@@ -67,5 +70,9 @@ export class MainPageComponent implements OnInit {
     this.mode = theme;
     this.selectedTheme = theme;
     this.settingWidth = false;
+  }
+  getUrl(item: any) {
+    this.about = item;
+    console.log(this.about);
   }
 }

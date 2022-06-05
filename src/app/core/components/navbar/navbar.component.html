@@ -1,6 +1,7 @@
 <nav class="navbar mobile-navbar">
   <ul>
     <i
+      (click)="onClick('home')"
       class="fa fa-home fa-3x home-icon mobile-home-page"
       routerLink="home"
     ></i>
@@ -17,6 +18,7 @@
 
     <ul>
       <i
+        (click)="onClick('home')"
         class="fa fa-home fa-3x home-icon desktop-home-page"
         routerLink="home"
       ></i>
@@ -26,7 +28,7 @@
         [ngClass]="{
           'navbar-hide': menuOpen
         }"
-        (click)="onClick()"
+        (click)="onClick(item.link)"
       >
         <a
           routerLinkActive="active"

@@ -7,7 +7,7 @@ import { navbarItems, user } from 'src/app/data/user';
   styleUrls: ['./navbar.component.less'],
 })
 export class NavbarComponent implements OnInit {
-  @Output() buttonClicked: EventEmitter<boolean> = new EventEmitter();
+  @Output() buttonClicked: EventEmitter<any> = new EventEmitter();
   user: any = user;
   items = navbarItems;
   menuOpen: boolean = true;
@@ -18,7 +18,8 @@ export class NavbarComponent implements OnInit {
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
-  onClick() {
+  onClick(item: any) {
     this.menuOpen = true;
+    this.buttonClicked.emit(item);
   }
 }
