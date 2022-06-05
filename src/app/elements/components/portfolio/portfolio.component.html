@@ -43,6 +43,7 @@
               icon="tuiIconChevronLeftLarge"
               class="left-arrow"
               (click)="navigate(-1, item.content.length)"
+              [disabled]="item.content.length === 1"
             ></button>
             <tui-carousel
               [(index)]="index"
