@@ -180,10 +180,16 @@ export const user = {
         ],
       },
       {
-        cover: '../assets/astraZeneca /3.jpeg',
+        cover: '../assets/astraZeneca/1.jpg',
         name: 'AstraZeneca ',
         description: 'Cardio-Renal Summit',
-        content: [],
+        content: [
+          '../assets/astraZeneca/1.jpg',
+          '../assets/astraZeneca/2.jpg',
+          '../assets/astraZeneca/3.jpg',
+          '../assets/astraZeneca/4.jpg',
+          '../assets/astraZeneca/5.jpg',
+        ],
       },
     ],
   },
